@@ -1,0 +1,20 @@
+config PACKAGE_cloud_debug
+    bool "Build with debug messages"
+	#depends CONFIG_PACKAGE_cloud-client
+    default n
+	help
+    	debug print switch
+
+config CLOUD_CLIENT_DATA_COLLECT
+    bool "data collect module"
+    #depends CONFIG_PACKAGE_cloud-client
+    default n
+    help
+    	data collect module
+
+config CLOUD_CLIENT_BT_CLIENT
+    bool "BT-Client Interfaces"
+	#depends CONFIG_PACKAGE_cloud-client
+    default n
+	help
+    	BT-Client Interfaces
